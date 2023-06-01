@@ -38,8 +38,10 @@ class MagicEgyptApp : Application() {
                     conversionData.update { campaign }
                 } else {
                     campaign = data?.get("adset").toString()
-                    prefEditor.putString("conversion_data", data?.get("campaign").toString()).commit()
-                    conversionData.update { data?.get("campaign") }
+                    if(campaign.isNotEmpty()) {
+                        prefEditor.putString("conversion_data", campaign).commit()
+                        conversionData.update { campaign }
+                    }
                 }
             }
 
