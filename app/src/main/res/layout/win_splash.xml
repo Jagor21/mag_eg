@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/win_splash"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/iv_win_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/win_splash"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/win_coins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/win_coins_margin_bottom"
+        android:text="200"
+        android:textColor="#30B581"
+        android:textSize="@dimen/text_45"
+        app:layout_constraintBottom_toBottomOf="@id/iv_win_bg"
+        app:layout_constraintEnd_toEndOf="@id/iv_win_bg"
+        app:layout_constraintStart_toStartOf="@id/iv_win_bg" />
+</androidx.constraintlayout.widget.ConstraintLayout>

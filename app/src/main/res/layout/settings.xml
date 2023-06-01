@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#66000000"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_settings_btn_close"
+        android:layout_above="@+id/sett"
+        android:layout_marginTop="-40dp"
+        android:background="@drawable/cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sett"/>
+
+    <RelativeLayout
+        android:id="@+id/sett"
+        android:layout_width="@dimen/margin_370"
+        android:layout_height="@dimen/margin_680"
+        android:background="@drawable/settings_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/close">
+
+
+        <ImageView
+            android:id="@+id/music_on"
+            android:layout_width="@dimen/width_music_on"
+            android:layout_height="@dimen/height_music_on"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/margin_music_on"
+            android:layout_marginEnd="@dimen/margin_100_sett"
+            android:background="@drawable/settings_on" />
+
+        <ImageView
+            android:id="@+id/music_off"
+            android:layout_width="@dimen/width_music_on"
+            android:layout_height="@dimen/height_music_on"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/margin_music_on"
+            android:layout_marginEnd="@dimen/margin_100_sett"
+            android:background="@drawable/settings_off"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/sounds_on"
+            android:layout_width="@dimen/width_music_on"
+            android:layout_height="@dimen/height_music_on"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/margin_sound_on"
+            android:layout_marginEnd="@dimen/margin_100_sett"
+            android:background="@drawable/settings_on" />
+
+        <ImageView
+            android:id="@+id/sounds_off"
+            android:layout_width="@dimen/width_music_on"
+            android:layout_height="@dimen/height_music_on"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/margin_sound_on"
+            android:layout_marginEnd="@dimen/margin_100_sett"
+            android:background="@drawable/settings_off"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

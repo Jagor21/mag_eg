@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "38470920243",
+    "project_id": "magic-egypt-e5db6",
+    "storage_bucket": "magic-egypt-e5db6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:38470920243:android:46d3a9ffe7a0336ceb5b46",
+        "android_client_info": {
+          "package_name": "com.eternal_joy.magic_egypt"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRfuW9gEVdfHediVxjmze6tGW3WTYkBPI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

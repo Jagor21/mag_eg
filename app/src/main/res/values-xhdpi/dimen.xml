@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_350">250dp</dimen>
+    <dimen name="margin_50">35dp</dimen>
+
+    <dimen name="text_45">25sp</dimen>
+    <dimen name="recycler_view_height">280dp</dimen>
+
+
+    <dimen name="margin_40">0dp</dimen>
+    <dimen name="margin_26">18dp</dimen>
+    <dimen name="margin_70">50dp</dimen>
+    <dimen name="margin_80">50dp</dimen>
+    <dimen name="margin_100">80dp</dimen>
+    <dimen name="margin_120">80dp</dimen>
+    <dimen name="margin_150">100dp</dimen>
+    <dimen name="margin_370">300dp</dimen>
+    <dimen name="margin_680">500dp</dimen>
+    <dimen name="margin_165">110dp</dimen>
+    <dimen name="margin_100_sett">50dp</dimen>
+    <dimen name="margin_215">150dp</dimen>
+    <dimen name="margin_90">90dp</dimen>
+    <dimen name="margin_40_sett">40dp</dimen>
+    <dimen name="margin_113">100dp</dimen>
+    <dimen name="margin_20_rv">20dp</dimen>
+    <dimen name="spinner_item_height">70dp</dimen>
+    <dimen name="balance_height">70dp</dimen>
+    <dimen name="margin_music_on">105dp</dimen>
+    <dimen name="margin_sound_on">125dp</dimen>
+    <dimen name="win_coins_margin_bottom">127dp</dimen>
+
+    <dimen name="padding_100">50dp</dimen>
+    <dimen name="padding_50">30dp</dimen>
+
+
+
+    <dimen name="text_24">18sp</dimen>
+    <dimen name="text_28">18sp</dimen>
+</resources>

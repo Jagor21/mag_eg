@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgg"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/jackpot_container"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/margin_jackpot"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="@dimen/margin_bottom_pics"
+        android:background="@drawable/jackpot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/jackpot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="25dp"
+            android:text="250,565"
+            android:textColor="#8C4E05"
+            android:textSize="@dimen/text_28"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.75"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/spinner_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jackpot_container"
+        android:layout_marginTop="@dimen/margin_40"
+        android:layout_marginStart="@dimen/margin_20_rv"
+        android:layout_marginEnd="@dimen/margin_20_rv"
+        android:background="@drawable/spinner_shape"
+        android:paddingTop="@dimen/padding_50"
+        android:paddingBottom="@dimen/padding_50"
+        app:layout_constraintBottom_toTopOf="@id/balance_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/jackpot_container">
+
+        <ImageView
+            android:id="@+id/iv_win_area"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/margin_113"
+            android:layout_marginStart="@dimen/margin_20_rv"
+            android:layout_marginEnd="@dimen/margin_20_rv"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/center_area" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/spinner1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/recycler_view_height"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/spinner2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:listitem="@layout/spinner_item" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/spinner2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/recycler_view_height"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/spinner3"
+            app:layout_constraintStart_toEndOf="@id/spinner1"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:listitem="@layout/spinner_item" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/spinner3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/recycler_view_height"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/spinner2"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:listitem="@layout/spinner_item" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/balance_container"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/balance_height"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="@dimen/margin_26"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/balance_bg"
+        app:layout_constraintBottom_toTopOf="@id/bottom_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinner_container"
+        app:layout_constraintVertical_bias="0.5">
+
+        <TextView
+            android:id="@+id/myCoins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:text="0575"
+            android:textColor="#8C4E05"
+            android:textSize="@dimen/text_28"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.75"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include
+        android:id="@+id/bottom_bar"
+        layout="@layout/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/balance_container"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <WebView
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

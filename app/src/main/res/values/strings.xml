@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Magic Egypt</string>
+    <string name="reminders_notification_channel_id">magic_egypt_channel_id</string>
+    <string name="default_notification_channel_id">com.eternal_joy.magic_egypt</string>
+    <string name="reminders_notification_channel_name">magic_egypt_channel_name</string>
+    <string name="appsflyer_dev_key">F8ZsrrFRc3jVTJX9LwqF9H</string>
+</resources>
